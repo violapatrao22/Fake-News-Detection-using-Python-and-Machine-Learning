@@ -9,7 +9,6 @@ This project demonstrates a basic machine learning model for detecting fake news
 - [Usage](#usage)
 - [Model](#model)
 - [Results](#results)
-- [Contributing](#contributing)
 
 ## Overview
 
