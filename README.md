@@ -36,18 +36,26 @@ The CSV file should be placed in the path: C:\yourpath\
 
 ## Usage
 
-1. Prepare the Dataset:
+1. Prepare the Dataset: Load the dataset and split it into training and testing sets. Initialize a TfidfVectorizer to transform the text data into numerical features.
 
-Load the dataset and split it into training and testing sets.
-Initialize a TfidfVectorizer to transform the text data into numerical features.
+2. Train the Model: Initialize the PassiveAggressiveClassifier and train it on the TF-IDF features extracted from the training set.
 
-2. Train the Model:
+3. Evaluate the Model: Predict the labels for the test set and calculate the accuracy. Build a confusion matrix to understand the model's performance.
 
-Initialize the PassiveAggressiveClassifier and train it on the TF-IDF features extracted from the training set.
+4. Run the script:
+   Execute the Python script to run the model:
+   ```bash
+   python script.py
 
-3. Evaluate the Model:
+## Model
 
-Predict the labels for the test set and calculate the accuracy.
-Build a confusion matrix to understand the model's performance.
+1. TfidfVectorizer: Converts the text data into numerical features based on the frequency and importance of words.
+2. PassiveAggressiveClassifier: This classifier remains passive for correct classifications and becomes aggressive when misclassifications occur. It's particularly useful for online learning and can handle large datasets efficiently.
 
+## Results
 
+1. Accuracy: The model achieves a high accuracy in detecting fake news. The accuracy is printed at the end of the script.
+2. Confusion Matrix: The confusion matrix provides insights into the number of correct and incorrect classifications for both fake and real news.
+```bash
+# Example output
+Accuracy: 92.85%
