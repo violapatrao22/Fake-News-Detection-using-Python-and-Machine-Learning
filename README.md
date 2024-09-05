@@ -23,3 +23,31 @@ To run this project, you will need to have Python installed on your machine. Add
    ```bash
    git clone https://github.com/yourusername/your-repository.git
    cd your-repository
+
+2. **Install the required packages:**
+   ```bash
+   pip install numpy pandas scikit-learn
+
+## Dataset
+
+The dataset used in this project is a collection of news articles stored in a CSV file. Each article is labeled as either "FAKE" or "REAL". The dataset is loaded using Pandas, and the text data is processed using TF-IDF vectorization.
+
+The CSV file should be placed in the path: C:\yourpath\
+
+## Usage
+
+1. Prepare the Dataset:
+
+Load the dataset and split it into training and testing sets.
+Initialize a TfidfVectorizer to transform the text data into numerical features.
+
+2. Train the Model:
+
+Initialize the PassiveAggressiveClassifier and train it on the TF-IDF features extracted from the training set.
+
+3. Evaluate the Model:
+
+Predict the labels for the test set and calculate the accuracy.
+Build a confusion matrix to understand the model's performance.
+
+
